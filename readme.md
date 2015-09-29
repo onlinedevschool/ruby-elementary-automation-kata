@@ -48,22 +48,27 @@ And in that `diff` we just compare the result of our command with the expected r
 
 To determine the next step for a given cell, simply look at the cell and its two immediate neighbors. The rules for life and death and rebirth come [from the 110 Rule](https://en.wikipedia.org/wiki/Rule_110):
 
+```
 |-----------------------|-----|-----|-----|-----|-----|-----|-----|-----|
 | current pattern       | 111 | 110 | 101 | 100 | 011 | 010 | 001 | 000 |
 | center cell becomes   |  0  |  1  |  1  |  0  |  1  |  1  |  1  |  0  |
-|-----------------------|-----|-----|-----|-----|-----|-----|-----|-----|
+```
 
 For example, if given a string `111`, the middle cell will turn into a `0`, as shown in the first column of the above table.
 
 The right (and far-left) sides of the string are considered 0's and are not shown in the input or output. This means the string:
 
+```
 0 1 1 1
+```
 
 will become:
 
+```
 1 1 0 1 
+```
 
-In each case, you will be given an input string to start with and a number b. Can you output the next b steps of the Automaton?
+In each case, you will be given an input string to start with and a number `B`. Can you output the next b steps of the Automaton?
 
 ## Program Input Description
 

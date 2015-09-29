@@ -1,10 +1,8 @@
 require_relative 'round'
 
-# method from https://www.learneroo.com/modules/147/nodes/804
-def do_stuff(a, b)
-  Round.new(a, b).output.map do |generation|
-    generation
-  end
+def run_simulation(a, b)
+  # use round.rb to create some code here to satisfy the challenge
+  # requirements as listed in the readme.md
 end
 
 # imperative shell
@@ -12,5 +10,5 @@ t = gets.to_i
 for i in 1..t do
   a, b = gets.strip.split.map {|i| i.to_i}
   # imperative shell
-  puts do_stuff(a, b).join("\n")
+  puts run_simulation(a, b).join("\n")
 end
