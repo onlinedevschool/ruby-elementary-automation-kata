@@ -1,11 +1,11 @@
-# Elemenntary Cellular Automation in Ruby
+# Elementary Cellular Automation in Ruby
 
 Cellular Automaton is a model of a grid of 'cells' that change over time based on the patterns of nearby cells.
 
 The objective of this challenge is to create an Elementary Automaton, or a 1-dimensional version of changing cells. Given a starting string of 1's and 0's can you determine the next steps for the Automaton?
 
 
-## Cloning the kata
+## Cloning the Kata
 
 ``` sh
 git clone git@github.com:onlinedevschool/ruby-elementary-automation-kata.git
@@ -25,7 +25,7 @@ The shell.rb file is the `imperative shell`, which essentially kicks off the pro
 
 The round.rb file is where you will code your solution. Each round as specified by the program input (more on that below) will be generated inside this file.
 
-Finally the `shell command` to run this excersize is a combination of several `unix commands`, `piped` together to generate the output. A unix pipe is essentially a way to redirect the output of one unix command into another so you can further process the output before it hits the terminal screen.
+Finally the `shell command` to run this exercise is a combination of several `unix commands`, `piped` together to generate the output. A UNIX pipe is essentially a way to redirect the output of one UNIX command into another so you can further process the output before it hits the terminal screen.
 
 ``` sh
 ruby shell.rb < input > results && diff output results
@@ -68,13 +68,13 @@ will become:
 1 1 0 1 
 ```
 
-In each case, you will be given an input string to start with and a number `B`. Can you output the next b steps of the Automaton?
+In each case, you will be given an input string to start with and a number `B`. Can you output the next `B` steps of the Automaton?
 
 ## Program Input Description
 
 You will be given a number `N` followed by `T` lines. Each line will contain 2 numbers: `A`, the starting pattern for the automaton, and `B`, the number of lines of the pattern to output.
 
-The provided boilerplate code will provide both a and b as integers to the method doStuff.
+The provided boilerplate code will provide both `A` and `B` as integers to the method `run_simulation`.
 
 ## The Program Output Format
 
@@ -117,4 +117,4 @@ Checkout the branch 'complete', then run this in the terminal:
 ruby shell.rb < input > results && diff output results
 ```
 
-This command will return nothing if successful (in the true unix fashion) or a 'diff' of the differences if the utility is not creating correct output.
+This command will return nothing if successful (in the true UNIX fashion) or a 'diff' of the differences if the utility is not creating correct output.
