@@ -1,8 +1,9 @@
 require_relative 'round'
 
 def run_simulation(a, b)
-  # use round.rb to create some code here to satisfy the challenge
-  # requirements as listed in the readme.md
+  Round.new(a, b).output.map do |generation|
+    generation
+  end
 end
 
 # imperative shell
